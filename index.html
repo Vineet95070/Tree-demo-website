@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.css"> -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .right-sidebar {
+            position: fixed;
+            top: 10%; /* Adjust the vertical positioning */
+            right: 2%; /* Adjust the distance from the right edge */
+            width: 300px; /* Set the width of the aside */
+            background-color: #f8f9fa; /* Optional: Add a background color */
+            padding: 10px; /* Optional: Add padding for better spacing */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+            border-radius: 5px; /* Optional: Add rounded corners */
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+            <img src="Picture1.png" alt="Company Logo" class="logo" width="80px"> <!-- Replace with your image path -->
+            <!-- <h1>DSA Trees Documentation</h1> -->
+
+          <a class="navbar-brand" href="#">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="Our Courses" aria-expanded="false">
+                <b> Our Courses</b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a>1st one</li>
+                  <li><a class="dropdown-item" href="#">Another action</a>2nd one</li>
+                  <li><hr class="dropdown-divider"> 3rd one</li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="wrapper">
+        <aside id="sidebar">
+            <div class="d-flex">
+                <button class="toggle-btn" type="button">
+                    <i class="lni lni-grid-alt"></i>
+                </button>
+                <div class="sidebar-logo">
+                    <a href="#">CodzSword</a>
+                </div>
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-user"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="tutorial" class="sidebar-link">
+                        <i class="lni lni-agenda"></i>
+                        <span>Tutorial</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
+                        <i class="lni lni-protection"></i>
+                        <span>Auth</span>
+                    </a>
+                    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Login</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Register</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#multi" aria-expanded="false" aria-controls="multi">
+                        <i class="lni lni-layout"></i>
+                        <span>Multi Level</span>
+                    </a>
+                    <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two">
+                                Two Links
+                            </a>
+                            <ul id="multi-two" class="sidebar-dropdown list-unstyled collapse">
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Link 1</a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Link 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-popup"></i>
+                        <span>Notification</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-cog"></i>
+                        <span>Setting</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="sidebar-footer">
+                <a href="#" class="sidebar-link">
+                    <i class="lni lni-exit"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside>
+        
+        
+
+        <div class="main p-3" style="margin-right: 25%;">
+            <div class="text" style=" scroll-behavior: smooth; ">
+                <div id="tree">
+                    <h1>
+                        Tree
+                    </h1>
+                </div>
+
+                <div class="container-sm"> <b>A tree data structure is a hierarchical structure that consists of nodes connected by edges</b>. It is a widely used abstract data type that simulates a hierarchical tree structure, with a root value and subtrees of children, represented as a set of linked nodes. Here are some key features and definitions related to trees:
+                </div>
+
+                <!-- tree image  -->
+                <center> <br> <img src="tree.png" alt="tree" width="80%;"> </center> <br>
+                
+                <h1>Binary Tree:</h1>
+                <p>
+                    A binary tree is a type of tree data structure in which each node has at most two children, referred to as the left child and the right child. 
+                    
+                </p>
+                <div id="key-properties">
+                    <strong id="key-properties">Key Properties of BST</strong>
+                </div>
+    <ol>
+        <li><strong>Left Subtree:</strong> The value of each node in the left subtree is less than the value of the parent node.</li>
+        <li><strong>Right Subtree:</strong> The value of each node in the right subtree is greater than the value of the parent node.</li>
+        <li><strong>No Duplicates:</strong> Generally, BSTs do not allow duplicate values, but they can be modified to allow duplicates either on the left or right subtree.</li>
+        <li><strong>Recursion:</strong> BSTs use recursion in their traversal, insertion, and deletion operations.</li>
+    </ol>
+
+    <div id="operation-complexity">
+        <strong>Operations on a BST</strong>
+    </div>
+    <ol>
+        <li><strong>Search:</strong>
+            <ul>
+                <li>To search for an element, start at the root and recursively traverse the tree.</li>
+                <li>If the element is smaller than the current node’s value, move to the left subtree; if larger, move to the right subtree.</li>
+                <li><strong>Time Complexity:</strong> O(log n) on average (O(n) in the worst case).</li>
+            </ul>
+        </li>
+        <br>
+        <li><strong>Insertion:</strong>
+            <ul>
+                <li>To insert a new element, follow the same logic as in the search operation. Find the correct position where the new element should go and insert it as a leaf node.</li>
+                <li><strong>Time Complexity:</strong> O(log n) on average (O(n) in the worst case).</li>
+            </ul>
+        </li>
+        <li><strong>Deletion:</strong>
+            <ul>
+                <li>Deletion can be handled in three cases:
+                    <ol>
+                        <li><strong>Leaf Node:</strong> Simply remove the node.</li>
+                        <li><strong>Node with One Child:</strong> Replace the node with its single child.</li>
+                        <li><strong>Node with Two Children:</strong> Find the node’s in-order successor (the smallest node in the right subtree) or in-order predecessor (the largest node in the left subtree), replace the node with that value, and delete the successor/predecessor.</li>
+                    </ol>
+                </li>
+                <li><strong>Time Complexity:</strong> O(log n) on average (O(n) in the worst case).</li>
+            </ul>
+        </li>
+    </ol>
+
+    
+    <center> <br> <img src="Binary_tree.png" alt="tree" width="80%;"> </center> <br>
+    
+    <h1 id="traversal"><strong>Traversal Techniques</strong></h1>
+
+    <ul>
+        <li><strong>In-Order Traversal:</strong>
+            <ul>
+                <li>Traverse the left subtree, visit the node, and then traverse the right subtree. This results in the values being accessed in ascending order.</li>
+                <li><strong>Order:</strong> Left → Root → Right</li>
+            </ul>
+        </li>
+        <li><strong>Pre-Order Traversal:</strong>
+            <ul>
+                <li>Visit the node first, then traverse the left subtree and right subtree.</li>
+                <li><strong>Order:</strong> Root → Left → Right</li>
+            </ul>
+        </li>
+        <li><strong>Post-Order Traversal:</strong>
+            <ul>
+                <li>Traverse the left subtree, right subtree, and then visit the node.</li>
+                <li><strong>Order:</strong> Left → Right → Root</li>
+            </ul>
+        </li>
+        <li><strong>Level-Order Traversal (Breadth-First):</strong>
+            <ul>
+                <li>Traverse the tree level by level from the root to the leaves. This is typically implemented using a queue.</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<div class="section">
+    <strong>Advantages of BST</strong>
+    <ul>
+        <li><strong>Efficient Search Operations:</strong> On average, searching, insertion, and deletion in a balanced BST take O(log n) time.</li>
+        <li><strong>Sorted Data:</strong> In-order traversal of a BST gives sorted data in ascending order.</li>
+        <li><strong>Dynamic Size:</strong> BSTs grow and shrink dynamically, so you don’t need to predefine their size.</li>
+    </ul>
+</div>
+
+<div class="section">
+    <strong>Disadvantages of BST</strong>
+    <ul>
+        <li><strong>Unbalanced Trees:</strong> In the worst case, where the tree is skewed (like a linked list), the time complexity for search, insertion, and deletion becomes O(n).</li>
+        <li><strong>Balancing Required:</strong> To ensure efficiency, a BST may need to be balanced, which leads to the introduction of self-balancing BSTs like AVL Trees or Red-Black Trees.</li>
+    </ul>
+</div>
+
+<div class="section">
+    <strong>Balanced BSTs</strong>
+    <ul>
+        <li><strong>AVL Trees:</strong> A self-balancing BST where the difference in heights between the left and right subtrees of any node is at most 1. Rotations are used to maintain balance after insertions and deletions.</li>
+        <li><strong>Red-Black Trees:</strong> A type of self-balancing BST where nodes are colored either red or black, and the tree satisfies specific balancing properties, ensuring that the longest path from the root to a leaf is no more than twice the length of the shortest path.</li>
+    </ul>
+</div>
+
+<div class="section">
+    <strong>Applications of BST</strong>
+    <ul>
+        <li><strong>Database Indexing:</strong> BSTs are used in databases for fast retrieval of records.</li>
+        <li><strong>In-Memory Search:</strong> Useful for applications that require dynamic ordered data and fast search capabilities.</li>
+        <li><strong>Sorting:</strong> BSTs can be used to perform an in-place sort via in-order traversal.</li>
+    </ul>
+
+
+    <div id="difference">
+        <strong>Binary Tree VS Binary Search Tree</strong>
+        <center> <br> <img src="difference between bst and binary tree.png" alt="tree" width="80%;"> </center> <br>
+    </div>
+    <br><br> <hr> <br>
+
+    <center> <br><br>
+    <div id="tutorial">
+        <iframe width="760" height="415" src="https://www.youtube.com/embed/Z0mAvwaFjWw?si=Lf7k_Z1TnbpCHGKL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="container mt-5">
+        <div style="background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+            <p>Welcome to the second video in my Linked List series! This video focuses on creating your first linked list in C++ and solving the first HackerRank problem step by step. Whether you're a beginner or preparing for coding interviews, this tutorial will help you understand and implement linked lists effectively.</p>
+    
+            <div class="mt-3">
+                <p style="font-weight: bold; font-size: 1.2rem; color: #333;">Chapters:</p>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li style="margin-bottom: 5px;"><span style="font-weight: bold;">0:00</span> Introduction</li>
+                    <li style="margin-bottom: 5px;"><span style="font-weight: bold;">1:15</span> Overview of Linked List</li>
+                    <li style="margin-bottom: 5px;"><span style="font-weight: bold;">3:30</span> Creating the First Linked List</li>
+                    <li style="margin-bottom: 5px;"><span style="font-weight: bold;">10:20</span> Solving HackerRank Problem 1</li>
+                    <li style="margin-bottom: 5px;"><span style="font-weight: bold;">20:45</span> Explanation of the Output</li>
+                    <li style="margin-bottom: 5px;"><span style="font-weight: bold;">25:00</span> Wrap Up</li>
+                </ul>
+            </div>
+    
+            <div class="mt-3">
+                <p style="font-weight: bold; font-size: 1.2rem; color: #333;">What you'll learn:</p>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li style="margin-bottom: 5px;">Implementation of a basic linked list in C++.</li>
+                    <li style="margin-bottom: 5px;">Solving real-world problems using linked lists.</li>
+                    <li style="margin-bottom: 5px;">Step-by-step guidance to ace HackerRank problems.</li>
+                </ul>
+            </div>
+    
+            <div class="mt-3">
+                <p style="font-weight: bold; font-size: 1.2rem; color: #333;">Useful Links:</p>
+                <ul style="list-style-type: none; padding-left: 0; margin-top: 10px;">
+                    <li style="margin-bottom: 5px;"><a href="#" style="text-decoration: none; color: #007bff;">HackerRank Linked List Problem</a></li>
+                    <li style="margin-bottom: 5px;"><a href="#" style="text-decoration: none; color: #007bff;">GitHub Repository for Code</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</center>
+
+
+            
+        </div>
+
+        <aside class="col-md-3 right-sidebar position-fixed side-bar" style="margin-left: 5%; margin-top: 2%; ">
+            <!-- <h2>Additional Points</h2> -->
+            <div class="accordion" id="accordionMenu">
+                <!-- Section 1 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Binary Tree
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionMenu">
+                    <div class="accordion-body">
+                        <ul class="list-unstyled">
+                            <li><a href="#tree">Tree</a></li>
+                            <li><a href="#key-properties">Key Properties</a></li>
+                            <li><a href="#operation-complexity">Operation and Complexity</a></li>
+                            <li><a href="#traversal">Traversal</a></li>
+                            <li><a href="#difference">Binary Tree VS BST</a></li>
+                            <li><a href="#tutorial">Tutorail</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Section 2 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Binary Search Tree
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionMenu">
+                    <div class="accordion-body">
+                      <ul class="list-unstyled">
+                        <li>What is BST</li>
+                        <li>Traversal</li>
+                        <li>Complexity</li>
+                        <li>Difference between Binary Search Tree and Binary Tree</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Section 3 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Working with Vaults
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionMenu">
+                    <div class="accordion-body">
+                      Content for "Working with Vaults".
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Section 4 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Working with Archives
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionMenu">
+                    <div class="accordion-body">
+                      Content for "Working with Archives".
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </aside>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    
+      
+</body>
+</html>
